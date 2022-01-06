@@ -39,8 +39,8 @@ mkdir -p ${DIR_CONFIG}
 cp ${DIR_TMP}/config.json ${DIR_CONFIG}/config.json
 
 # Install Xray
-install -m 755 ${DIR_TMP}/Xray ${DIR_RUNTIME}
+install -m 755 ${DIR_TMP}/xray ${DIR_RUNTIME}
 rm -rf ${DIR_TMP}
 
 # Run Xray
-${DIR_RUNTIME}/Xray run -config ${DIR_CONFIG}/config.json
+${DIR_RUNTIME}/xray run -config ${DIR_CONFIG}/config.json
